@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58369B682AFF8F1800D85B21 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58369B672AFF8F1800D85B21 /* PlayerViewController.swift */; };
+		58369B702AFFA2CA00D85B21 /* Example2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58369B6E2AFFA2CA00D85B21 /* Example2.mp3 */; };
+		58369B712AFFA2CA00D85B21 /* Example1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58369B6F2AFFA2CA00D85B21 /* Example1.mp3 */; };
 		58A00F6A2AFEC3E0008EA08D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A00F692AFEC3E0008EA08D /* AppDelegate.swift */; };
 		58A00F6C2AFEC3E0008EA08D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A00F6B2AFEC3E0008EA08D /* SceneDelegate.swift */; };
-		58A00F6E2AFEC3E0008EA08D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A00F6D2AFEC3E0008EA08D /* ViewController.swift */; };
+		58A00F6E2AFEC3E0008EA08D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A00F6D2AFEC3E0008EA08D /* MainViewController.swift */; };
 		58A00F712AFEC3E0008EA08D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58A00F6F2AFEC3E0008EA08D /* Main.storyboard */; };
 		58A00F732AFEC3E1008EA08D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58A00F722AFEC3E1008EA08D /* Assets.xcassets */; };
 		58A00F762AFEC3E1008EA08D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58A00F742AFEC3E1008EA08D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58369B672AFF8F1800D85B21 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		58369B6E2AFFA2CA00D85B21 /* Example2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Example2.mp3; sourceTree = "<group>"; };
+		58369B6F2AFFA2CA00D85B21 /* Example1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Example1.mp3; sourceTree = "<group>"; };
 		58A00F662AFEC3E0008EA08D /* SurfAPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfAPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58A00F692AFEC3E0008EA08D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58A00F6B2AFEC3E0008EA08D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		58A00F6D2AFEC3E0008EA08D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58A00F6D2AFEC3E0008EA08D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		58A00F702AFEC3E0008EA08D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58A00F722AFEC3E1008EA08D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58A00F752AFEC3E1008EA08D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58369B642AFF8E1500D85B21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58A00F6F2AFEC3E0008EA08D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58369B652AFF8E1E00D85B21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				58A00F6D2AFEC3E0008EA08D /* MainViewController.swift */,
+				58369B672AFF8F1800D85B21 /* PlayerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		58369B662AFF8E2400D85B21 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				58A00F772AFEC3E1008EA08D /* Info.plist */,
+				58A00F692AFEC3E0008EA08D /* AppDelegate.swift */,
+				58A00F6B2AFEC3E0008EA08D /* SceneDelegate.swift */,
+				58A00F722AFEC3E1008EA08D /* Assets.xcassets */,
+				58A00F742AFEC3E1008EA08D /* LaunchScreen.storyboard */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		58369B6D2AFFA2A300D85B21 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				58369B6F2AFFA2CA00D85B21 /* Example1.mp3 */,
+				58369B6E2AFFA2CA00D85B21 /* Example2.mp3 */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
 		58A00F5D2AFEC3E0008EA08D = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +100,10 @@
 		58A00F682AFEC3E0008EA08D /* SurfAPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				58A00F692AFEC3E0008EA08D /* AppDelegate.swift */,
-				58A00F6B2AFEC3E0008EA08D /* SceneDelegate.swift */,
-				58A00F6D2AFEC3E0008EA08D /* ViewController.swift */,
-				58A00F6F2AFEC3E0008EA08D /* Main.storyboard */,
-				58A00F722AFEC3E1008EA08D /* Assets.xcassets */,
-				58A00F742AFEC3E1008EA08D /* LaunchScreen.storyboard */,
-				58A00F772AFEC3E1008EA08D /* Info.plist */,
+				58369B642AFF8E1500D85B21 /* View */,
+				58369B652AFF8E1E00D85B21 /* Controller */,
+				58369B662AFF8E2400D85B21 /* Utilities */,
+				58369B6D2AFFA2A300D85B21 /* Songs */,
 			);
 			path = SurfAPlayer;
 			sourceTree = "<group>";
@@ -125,8 +166,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58369B702AFFA2CA00D85B21 /* Example2.mp3 in Resources */,
 				58A00F762AFEC3E1008EA08D /* LaunchScreen.storyboard in Resources */,
 				58A00F732AFEC3E1008EA08D /* Assets.xcassets in Resources */,
+				58369B712AFFA2CA00D85B21 /* Example1.mp3 in Resources */,
 				58A00F712AFEC3E0008EA08D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58A00F6E2AFEC3E0008EA08D /* ViewController.swift in Sources */,
+				58A00F6E2AFEC3E0008EA08D /* MainViewController.swift in Sources */,
+				58369B682AFF8F1800D85B21 /* PlayerViewController.swift in Sources */,
 				58A00F6A2AFEC3E0008EA08D /* AppDelegate.swift in Sources */,
 				58A00F6C2AFEC3E0008EA08D /* SceneDelegate.swift in Sources */,
 			);
@@ -294,12 +338,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DQ6AN9K3FQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SurfAPlayer/Info.plist;
+				INFOPLIST_FILE = SurfAPlayer/Utilities/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +352,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bojieitsit.SurfAPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,12 +370,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DQ6AN9K3FQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SurfAPlayer/Info.plist;
+				INFOPLIST_FILE = SurfAPlayer/Utilities/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +384,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bojieitsit.SurfAPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
