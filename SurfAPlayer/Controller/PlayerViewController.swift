@@ -8,8 +8,6 @@
 import UIKit
 import AVFoundation
 
-
-
 class PlayerViewController: UIViewController {
     
     //MARK: - IBOutlets
